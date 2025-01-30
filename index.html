@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>EducaTec</title>
+  <meta name="description" content>
+  <meta name="keywords" content>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Append
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    body {
+      background-color: #e0f7fa;
+      /* Light blue background */
+      color: #005B08;
+      /* Dark green text */
+    }
+
+    .header {
+      background-color: #005B08;
+      /* Teal */
+    }
+
+    .header .logo h1 {
+      color: #e0f7fa;
+      /* Light blue */
+    }
+
+    .navmenu ul li a {
+      color: #b2dfdb;
+      /* Pale green */
+    }
+
+    .btn-getstarted {
+      background-color: #005B08;
+      /* Dark green */
+      color: #e0f7fa;
+      /* Light blue */
+    }
+
+    .btn-getstarted:hover {
+      background-color: #005B08;
+      /* Slightly lighter green */
+      color: #ffffff;
+    }
+
+    .section-title h2 {
+      color: #005B08;
+    }
+
+    .icon-box {
+      background-color: #e0f2f1;
+      /* Very light green */
+      border: 1px solid #004d40;
+      /* Dark green border */
+    }
+
+    .icon-box h3 {
+      color: #005B08;
+    }
+
+    .icon-box p {
+      color: #000000;
+    }
+
+    footer {
+      background-color: #005B08;
+      color: #e0f7fa;
+    }
+
+    footer a {
+      color: #b2dfdb;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    .btn-getstarted {
+      background-color: #45474A;
+      color: white;
+      /* Cor do texto */
+      border: none;
+      /* Remover borda */
+      padding: 10px 20px;
+      /* Ajustar espaçamento */
+      border-radius: 5px;
+      /* Bordas arredondadas */
+      text-decoration: none;
+      /* Remover sublinhado */
+      display: inline-block;
+      /* Garantir comportamento de botão */
+      text-align: center;
+      /* Centralizar texto */
+    }
+
+    .btn-getstarted:hover {
+      background-color: #5A5C60;
+      /* Cor ao passar o mouse */
+      color: #ffffff;
+      /* Cor do texto ao passar o mouse */
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      /* Ocupa a altura total da viewport */
+      display: flex;
+      align-items: center;
+      /* Alinha verticalmente ao centro */
+      justify-content: center;
+      /* Alinha horizontalmente ao centro */
+      overflow: hidden;
+      /* Esconde qualquer conteúdo que transborde */
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Mantém proporção e cobre toda a tela */
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      /* Mantém a imagem atrás do texto */
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      /* Fundo escuro semi-transparente */
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 2;
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      /* Define a fonte */
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero-text h3 {
+      font-size: 1.5rem;
+    }
+
+    .custom-row {
+      max-width: 90%;
+      /* Reduz a largura */
+      margin: 0 auto;
+      /* Centraliza a div */
+    }
+
+    .small-text {
+      font-size: 12px;
+      /* Ajuste o tamanho do texto conforme necessário */
+    }
+
+    .credits {
+      margin-top: 20px;
+      /* Ajuste o espaço abaixo conforme necessário */
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-center">
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Inicio</a></li>
+          <li><a href="index.html#about">Projeto</a></li>
+          <li><a href="index.html#services"> Técnicas</a></li>
+          <li><a href="index.html#portfolio">Problema & Solução</a></li>
+          <li><a href="index.html#pricing">Dados Coletados</a></li>
+          <li><a href="index.html#team">Protótipos</a></li>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </ul>
+      </nav>
+
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/opa.jpg" alt>
+      <div class="hero-text" data-aos="fade-in">
+        <h1>Bem-vindos ao EducaTec</h1>
+        <h3>Transformando a Educação com Tecnologia</h3>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>Educação</h3>
+            <h2>Projeto</h2>
+            <p>Registro de cancelamentos, sugestões para pausas,
+              monitoramento
+              de frequência, integração com recursos educacionais e
+              previsões
+              de problemas.</p>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-buildings"></i>
+                  <h3>Educação</h3>
+                  <p>Facilite o aprendizado com uma plataforma intuitiva que
+                    conecta professores e alunos.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-clock"></i> <!-- Mudança para o ícone de relógio -->
+                  <h3>Organização de Horários</h3>
+                  <p>Gerencie todos os horários de forma centralizada, com notificações automáticas e atualizações em
+                    tempo real. </p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-pulse"></i> <!-- Ícone movido para Agenda Acadêmica -->
+                  <h3>Agenda Acadêmica</h3>
+                  <p> Nossa agenda personalizada permite que você acompanhe cronogramas, programe compromissos e nunca
+                    perca uma aula ou evento importante.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3>Comunicação e Colaboração</h3>
+                  <p>Promova um ambiente colaborativo com ferramentas que incentivam a troca de ideias e a interação.
+                  </p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+
+        <h2>Técnicas Utilizadas</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+
+
+      <div class="row custom-row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-journal-text"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Explique para um E.T</a></h4>
+              <p class="description">Simplifica conceitos complexos ao pedir que você explique requisitos como se
+                estivesse falando com alguém sem nenhum conhecimento prévio. Isso ajuda a identificar suposições,
+                esclarecer ideias e garantir entendimento claro entre todos os envolvidos.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Matriz CSD</a></h4>
+              <p class="description">Organiza informações do projeto, separando o que é certeza, o que precisa de
+                validação e o que ainda gera questionamentos.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Discussão em Grupo</a></h4>
+              <p class="description">Reúne os colaboradores para trocar ideias, identificar necessidades e alinhar
+                expectativas, promovendo colaboração e insights variados para o levantamento de requisitos.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-flower3"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Lotus Blossom</a></h4>
+              <p class="description">Organiza ideias de forma visual e estruturada, começando com um conceito central e
+                expandindo-o em temas relacionados, promovendo criatividade e exploração detalhada de soluções.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-lightbulb"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Brainstorming</a></h4>
+              <p class="description">Incentiva a geração de ideias em grupo de forma livre e sem julgamentos, buscando
+                soluções criativas e inovadoras para identificar requisitos ou resolver problemas.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-file-earmark-text"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Questionário</a></h4>
+              <p class="description">É uma ferramenta prática para coletar requisitos, permitindo criar perguntas
+                personalizadas, alcançar um público amplo e analisar as respostas de forma organizada e automática.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+      </div>
+
+
+
+
+
+
+
+
+      </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Problemas & Soluções</h2>
+          <p></p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+              <h3>Problema: Desorganização na gestão de horários
+                acadêmicos</h3>
+              <p>
+                A desorganização na gestão de horários acadêmicos causa
+                conflitos de agenda, atrasos e dificuldade em acompanhar
+                compromissos. Isso afeta a produtividade, a comunicação entre
+                alunos e professores e a qualidade do ensino.
+              </p>
+
+            </div>
+            <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+              <div class="image-stack">
+                <img src="assets/img/problema.jpeg" alt class="stack-front">
+                <img src="assets/img/problema.jpeg" alt class="stack-back">
+              </div>
+            </div>
+          </div><!-- Features Item -->
+
+          <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+            <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+              <img src="assets/img/soluçao.jpeg" class="img-fluid" alt>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+              <h3>Solução do problema</h3>
+              <p>Painel de comunicação para turmas, substituições
+                automatizadas
+                e planejamento colaborativo entre professores.</p>
+
+
+            </div>
+          </div><!-- Features Item -->
+      </section>
+      </div>
+
+      <!-- Portfolio Section -->
+      <section id="pricing" class="pricing section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Dados Coletados</h2>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="WhatsApp Image 2025-01-24 at 08.52.39.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Distribuição por Idade</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="WhatsApp Image 2025-01-24 at 08.36.54.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Frequência de Horários Desorganizados</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="WhatsApp Image 2025-01-24 at 08.50.33.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Seu Tempo é bem Aproveitado quando seus Horários estão Desorganizados?</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="WhatsApp Image 2025-01-24 at 08.52.38 (1).jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Distribuição de Níveis de Educação</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="WhatsApp Image 2025-01-24 at 08.52.38.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Resultados Obtidos</p>
+                  <a href="blob:https://web.whatsapp.com/56dc1e21-ba0c-422f-9644-5edb1b910d13.jpg" title="Product 2"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="WhatsApp Image 2025-01-24 at 10.17.24.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Alexandre, Enzo, Luane, Maria Eduarda, Rafael, Renan, Pedro, Prisciele</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="WhatsApp Image 2025-01-24 at 08.50.33.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Seu tempo é bem Aproveitado quando seus Horários estão Desorganizados?</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="WhatsApp Image 2025-01-24 at 08.36.54.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Frequência de Horários Desorganizados</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="WhatsApp Image 2025-01-24 at 08.52.39.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Distribuição por Idade</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
+                    <a href="portfolio-details.html" title="More Details" class="details-link">
+                </div>
+              </div><!-- End Portfolio Item -->
+
+            </div><!-- End Portfolio Container -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Portfolio Section -->
+      <section id="team" class="team section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Protótipos</h2>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="WhatsApp Image 2025-01-30 at 08.05.05.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Tela Inicial</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="WhatsApp Image 2025-01-30 at 08.07.59.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Tela Inicial - Professores</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="WhatsApp Image 2025-01-30 at 09.52.50.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Substituição de Professor</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="WhatsApp Image 2025-01-30 at 09.57.08.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Substituição aceita pelo Professor Selecionado</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="WhatsApp Image 2025-01-30 at 09.54.30.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Agendar Comunicado de Substituição</p>
+                  <a href="blob:https://web.whatsapp.com/56dc1e21-ba0c-422f-9644-5edb1b910d13.jpg" title="Product 2"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="WhatsApp Image 2025-01-30 at 09.58.25.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Cancelamento de Aulas</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="WhatsApp Image 2025-01-30 at 09.59.16.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Cancelamento Concluído</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="WhatsApp Image 2025-01-30 at 10.00.08.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Entrada no Histórico de Aulas</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="WhatsApp Image 2025-01-30 at 08.21.43.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Histórico de Aulas</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
+                    <a href="portfolio-details.html" title="More Details" class="details-link">
+                </div>
+              </div><!-- End Portfolio Item -->
+
+            </div><!-- End Portfolio Container -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Portfolio Section -->
+      <section id="team" class="team section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Protótipos</h2>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="WhatsApp Image 2025-01-30 at 08.39.26.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Aulas do Dia</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="WhatsApp Image 2025-01-30 at 08.42.27.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Cronograma da Disciplina</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="WhatsApp Image 2025-01-30 at 09.42.19.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Ver Turmas</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="WhatsApp Image 2025-01-30 at 08.46.12.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Suas Turmas</p>
+                  <a href="blob:https://web.whatsapp.com/56dc1e21-ba0c-422f-9644-5edb1b910d13.jpg" title="App 3"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="WhatsApp Image 2025-01-30 at 08.48.56.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+
+                  <p>Cadastro de Dados</p>
+                  <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+      </section>
+
+      </div><!-- End Portfolio Container -->
+
+      </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Coordenador do Curso</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="WhatsApp Image 2025-01-30 at 09.13.14.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Inicio - Coordenador do Curso</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="WhatsApp Image 2025-01-30 at 08.53.34.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Aulas do Dia</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="WhatsApp Image 2025-01-30 at 08.56.03.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Gerenciar Aulas</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="WhatsApp Image 2025-01-30 at 09.02.31.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Gerenciar Turmas</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="WhatsApp Image 2025-01-30 at 09.05.15.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Adição de Aulas</p>
+                <a href="blob:https://web.whatsapp.com/56dc1e21-ba0c-422f-9644-5edb1b910d13.jpg" title="Product 2"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="WhatsApp Image 2025-01-30 at 08.59.59.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Edição de Aulas</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="WhatsApp Image 2025-01-30 at 10.16.31.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Horários de Outros Professores</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="WhatsApp Image 2025-01-30 at 10.17.45.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Edição das Aulas de Outros Professores</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="WhatsApp Image 2025-01-30 at 10.14.55.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Exclusão de Aulas</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
+                  <a href="portfolio-details.html" title="More Details" class="details-link">
+              </div>
+
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="WhatsApp Image 2025-01-30 at 10.29.42.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Recomendação de Horários</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
+                  <a href="portfolio-details.html" title="More Details" class="details-link">
+              </div>
+
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Alunos</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="WhatsApp Image 2025-01-30 at 10.32.39.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Inicio</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="WhatsApp Image 2025-01-30 at 10.33.58.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Tela Inicial - Alunos</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="WhatsApp Image 2025-01-30 at 10.35.06.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Tarefas</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="WhatsApp Image 2025-01-30 at 10.36.13.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Disciplinas - Tela Inicial</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="WhatsApp Image 2025-01-30 at 10.39.09.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Disciplina Específica</p>
+                <a href="blob:https://web.whatsapp.com/56dc1e21-ba0c-422f-9644-5edb1b910d13.jpg" title="Product 2"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="WhatsApp Image 2025-01-30 at 10.50.34.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Avaliações da Disciplina</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="WhatsApp Image 2025-01-30 at 10.57.17.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Conteúdos da Disciplina</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="WhatsApp Image 2025-01-30 at 10.58.41.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Edição de Dados</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="WhatsApp Image 2025-01-30 at 10.41.15.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Horários da Semana</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
+                  <a href="portfolio-details.html" title="More Details" class="details-link">
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="WhatsApp Image 2025-01-30 at 11.02.50.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <p>Avisos do Sistema</p>
+                <a title="Product 2" data-gallery="portfolio-gallery-product"></a>
+
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+      <section id="team" class="team section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Ajude-nos a Melhorar</h2>
+        </div><!-- End Section Title -->
+
+        <div class="container" style="justify-content: center; display: flex; align-items: center;">
+          <div class=" portfolio-item isotope-item" style="width: 400px; height: auto;">
+            <img src="qrcode.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info text-center">
+              <h5><a href="https://docs.google.com/forms/d/e/1FAIpQLSeftoVZzCLWDLW2xL_R7DNknlL8dT2CaKwrGS1xmUxsRbx2sA/viewform" title="More Details" class="details-link"><u>Acessar Aqui</u></a></h5>
+            </div>
+          </div>
+        </div>
+
+
+      </section><!-- /Portfolio Section -->
+
+
+
+    </section><!-- /Features Section -->
+
+    <div class="container copyright text-center mt-4">
+      <p class="small-text">© <span>Copyright</span> <strong class="sitename">Append</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <p class="small-text">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+        <div class="credits">
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
